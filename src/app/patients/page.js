@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-const AboutPage = () => {
+const Patients = () => {
   const checkImage = (
     <Image src="/assets/items/check.svg" width={24} height={24} alt="check" />
   );
@@ -150,4 +150,4 @@ const AboutPage = () => {
   );
 };
 
-export default AboutPage;
+export default Patients;

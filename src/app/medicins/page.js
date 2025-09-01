@@ -59,7 +59,7 @@ const MedicinPage = () => {
 
   return (
     <div className="bg-light-background pt-28 w-full flex flex-col px-4 sm:px-6 lg:px-[200px] relative">
-      {/* Title & Intro */}
+      {/*Title & Intro */}
       <div className="w-full">
         <h1 className="text-headline-medium font-normal text-light-primary text-left">
           Médecins

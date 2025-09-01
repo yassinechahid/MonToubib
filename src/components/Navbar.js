@@ -46,7 +46,7 @@ export default function Navbar() {
     { href: "/about", label: "About" },
     { href: "/patients", label: "Patients" },
     { href: "/medicins", label: "Doctors" },
-    { href: "/professionnels", label: "Professionals" },
+    { href: "/professionnels", label: "professionnels" },
     { href: "/blog", label: "Blog" },
     { href: "/contact", label: "Contact" },
   ];

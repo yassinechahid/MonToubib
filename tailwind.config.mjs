@@ -498,6 +498,7 @@ const tailwindConfig = {
       100: "#FFFFFF",
     },
   },
+  
 };
 
 const withMT = require("@material-tailwind/react/utils/withMT");

@@ -7,20 +7,32 @@ const BlogDetail = () => {
   const { id } = useParams(); // get the id from URL
   const blog = blogs.find((b) => b.id.toString() === id);
 
-  if (!blog) return <p>Blog not found</p>;
+  if (!blog) return <p className="text-center mt-20 text-red-500">Blog not found</p>;
 
   return (
-    <div className="px-6 lg:px-[100px] pt-28">
-      <Image
-        src={blog.image}
-        alt={blog.title}
-        width={1}
-        height={1}
-        className="w-full object-cover rounded-2xl"
-      />
-      <h1 className="text-2xl font-bold mt-4">{blog.title}</h1>
-      <p className="text-gray-500 mt-2">{blog.date}</p>
-      <p className="mt-4 text-gray-700">{blog.content}</p>
+    <div className="pt-28 w-full flex justify-center px-4 py-10">
+      <div className=" rounded-2xl shadow-lg flex flex-col w-full max-w-3xl p-6 lg:p-12">
+        
+        {/* Blog Image */}
+        <div className="w-full flex justify-center">
+          <Image
+            src={blog.image}
+            alt={blog.title}
+            width={800}
+            height={500}
+            className="w-full max-h-[400px] object-cover rounded-2xl"
+          />
+        </div>
+
+        {/* Title + Date */}
+        <h1 className="text-3xl font-bold mt-6 text-center">{blog.title}</h1>
+        <p className="text-gray-500 text-center mt-2">{blog.date}</p>
+
+        {/* Blog Content */}
+        <div className="mt-6 text-gray-800 space-y-4 prose prose-lg max-w-none">
+          {blog.content}
+        </div>
+      </div>
     </div>
   );
 };

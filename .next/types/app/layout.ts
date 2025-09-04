@@ -1,4 +1,4 @@
-// File: C:\Users\Ce Pc\Desktop\MonToubib\src\app\layout.js
+// File: C:\Users\HP\Desktop\MonToubib\src\app\layout.js
 import * as entry from '../../../src/app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
